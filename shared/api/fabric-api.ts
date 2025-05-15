@@ -8,7 +8,7 @@ const API_BASE_URL = "https://66d77b122c6b09c7.mokky.dev"
 export async function getFabricCategories(): Promise<FabricCategory[]> {
   try {
     const response = await fetch(`${API_BASE_URL}/craft`, {
-      next: { revalidate: 3600 }, // Ревалидация каждый час
+      next: { revalidate: 0 }, // Ревалидация каждый час
     })
 
     if (!response.ok) {
