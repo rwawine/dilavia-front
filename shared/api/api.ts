@@ -1,6 +1,6 @@
 import type { SofaData, BedData, ProductData } from "./types"
 
-const API_BASE_URL = "https://eb5cd2a292a9c526.mokky.dev"
+const API_BASE_URL = "https://66d77b122c6b09c7.mokky.dev"
 
 export async function getSofas(): Promise<SofaData[]> {
   try {
